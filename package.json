@@ -1,0 +1,44 @@
+{
+  "name": "mashreq-project",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "npm-check-updates": "^16.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-loading-screen": "^0.0.17",
+    "react-scripts": "^5.0.1",
+    "web-vitals": "^3.3.0",
+    "webpack": "^4.28.3"
+  },
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "test:ci": "yarn run",
+    "start-docker-compose": "docker-compose -f docker-compose.sonar.yml up -d",
+    "stop-docker-compose": "docker-compose -f docker-compose.sonar.yml down"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
